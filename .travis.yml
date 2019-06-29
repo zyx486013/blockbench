@@ -15,8 +15,9 @@ matrix:
 
     - name: "Linux"
       os: linux
-      script: sudo apt-get install rpm
-        build --publish=always
+      script:
+        - sudo apt-get install rpm
+        - build --publish=always
 
 
 cache:
